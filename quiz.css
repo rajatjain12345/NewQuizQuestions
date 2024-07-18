@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#wrapper {
+    text-align: center;
+}
+
+.timerwrapper {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: beige;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.options {
+    max-width: 600px;
+    margin: 0 auto;
+    border: 1px solid #ededed;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.options .option {
+    width: calc(50% - 60px);
+    padding: 10px;
+    margin: 15px;
+    background-color: rgb(236, 155, 212);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.options .option:hover,
+.options .option:active,
+.options .option:focus {
+    transform: scale(1.1);
+    background-color: bisque;
+    border: 1px dashed #b3b3b3;
+}
+
+.pointer-none {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.options .option-clicked {
+    background-color: goldenrod;
+}
+
+#score {
+    background-color: aqua;
+    padding: 50px;
+}
+
+.startBtn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.startBtn button {
+    background-color: #3592e9;
+    color: #fff;
+    border: 0;
+    padding: 5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.startBtn button:disabled {
+    opacity: 0.5;
+}
